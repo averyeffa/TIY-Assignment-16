@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box; }
+
+img {
+  width: 100%;
+  display: block; }
+
+#app-container {
+  background-image: url("../images/tomato-red-silhouette.svg");
+  background-size: cover;
+  background-position: bottom;
+  height: 720px;
+  width: 800px;
+  font-family: 'Roboto', sans-serif; }
+
+.timer-container {
+  text-align: center; }
+
+.numerical-counter {
+  color: #F7CA18;
+  padding-top: 180px;
+  font-size: 100px;
+  font-weight: 200;
+  text-shadow: #000 1px 1px 5px; }
+
+.input-task {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.footer-container {
+  text-align: center;
+  padding-top: 200px; }
+
+/*# sourceMappingURL=styles.css.map */
