@@ -9,9 +9,16 @@ img {
   background-image: url("../images/tomato-red-silhouette.svg");
   background-size: cover;
   background-position: bottom;
-  height: 720px;
+  height: 680px;
   width: 800px;
   font-family: 'Roboto', sans-serif; }
+
+.column-container {
+  font-size: 0; }
+  .column-container > * {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px; }
 
 .timer-container {
   text-align: center; }
@@ -21,13 +28,36 @@ img {
   padding-top: 180px;
   font-size: 100px;
   font-weight: 200;
-  text-shadow: #000 1px 1px 5px; }
+  text-shadow: #000 1px 1px 5px;
+  margin-bottom: 18px; }
 
 .input-task {
-  background-color: rgba(255, 255, 255, 0.5); }
+  background-color: rgba(255, 255, 255, 0.5);
+  min-height: 12px; }
 
 .footer-container {
   text-align: center;
-  padding-top: 200px; }
+  margin-top: 230px; }
+
+.footer-container input {
+  width: 85%;
+  border: none;
+  border-bottom: 2px solid #000;
+  padding-top: 70px;
+  padding-bottom: 12px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 20px;
+  font-weight: 400; }
+
+.footer-container button {
+  width: 15%;
+  background-color: #2574A9;
+  border: none;
+  color: #fff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  vertical-align: bottom;
+  font-size: 18px; }
 
 /*# sourceMappingURL=styles.css.map */
