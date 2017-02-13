@@ -60,4 +60,13 @@ img {
   vertical-align: bottom;
   font-size: 18px; }
 
+.hidden {
+  display: none; }
+
+.new-footer {
+  margin-top: 210px;
+  width: 100%;
+  height: 120px;
+  background-color: #fff; }
+
 /*# sourceMappingURL=styles.css.map */
