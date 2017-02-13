@@ -19,9 +19,30 @@ var clickedButton = document.querySelector('.footer-container button').addEventL
   footer.className = 'new-footer';
 
   // Timer Countdown
+  var minutesVal = 25;
+  var secondsVal = 1;
+
+  var intervalId = setInterval(function(){
+
+    if (secondsVal === 1){
+    minutesVal--;
+    secondsVal = 60;
+    }
+    secondsVal--;
 
 
+    var secondsStr = ''
 
-  
+    if (secondsVal < 10){
+      secondsStr = '0' + secondsVal.toString()
+    } if (secondsVal >= 10){
+      secondsStr = secondsVal.toString()
+    }
+
+    timerCountdown.innerHTML = minutesVal.toString() + ':' + secondsStr
+
+  }, 1000)
+
+
 
 })
