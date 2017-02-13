@@ -20,11 +20,11 @@ var clickedButton = document.querySelector('.footer-container button').addEventL
 
   // Timer Countdown
   var minutesVal = 25;
-  var secondsVal = 1;
+  var secondsVal = 0;
 
   var intervalId = setInterval(function(){
 
-    if (secondsVal === 1){
+    if (secondsVal === 0){
     minutesVal--;
     secondsVal = 60;
     }
@@ -38,11 +38,20 @@ var clickedButton = document.querySelector('.footer-container button').addEventL
     } if (secondsVal >= 10){
       secondsStr = secondsVal.toString()
     }
-
     timerCountdown.innerHTML = minutesVal.toString() + ':' + secondsStr
 
+    if (timerCountdown.innerHTML === '0:00') {
+        clearInterval(intervalId)
+        timedTask.className = 'hidden';
+        timerCountdown.innerHTML = 'Pomodoro Complete'
+        timerCountdown.style.fontSize = '50px';
+        timerCountdown.style.color = 'rgb(200, 247, 197)';
+        timerCountdown.style.fontWeight = '500';
+
+        // var timerStyles = window.getComputedStyle(timerCountdown)
+        // console.log(timerStyles)
+    }
+
   }, 1000)
-
-
 
 })
